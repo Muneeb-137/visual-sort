@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="visualizer.css"> 
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Sorting Algorithm Visualizer</h1>
+        <div class="nav-bar">
+            <button onclick="startSorting('bubble')">Bubble Sort</button>
+            <button onclick="startSorting('selection')">Selection Sort</button>
+            <button onclick="startSorting('insertion')">Insertion Sort</button>
+            <button onclick="startSorting('merge')">Merge Sort</button>
+            <button onclick="startSorting('quick')">Quick Sort</button>
+            <button id="resetButton" onclick="resetArray()">Reset Array</button>
+        </div>
+        <div>
+            <label>Size: <input type="range" min="10" max="100" value="50" class="slider" id="sizeSlider"></label>
+            <label>Speed: <input type="range" min="1" max="100" value="50" class="slider" id="speedSlider"></label>
+        </div>
+        <div id="array-container"></div>
+    </div>
+    <script src="visualizer.js"></script>
+    
+</body>
+</html>
